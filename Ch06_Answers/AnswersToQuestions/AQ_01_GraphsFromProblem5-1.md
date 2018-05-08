@@ -10,8 +10,9 @@
 
 A spanning forest being a forest that spans all of the vertices, meaning only that each vertex of the graph is a vertex in the forest. For this definition even a connected graph may have a disconnected spanning forest, such as the forest in which each vertex forms a single-vertex tree.
 
-
-**ANSWER**
+<details>
+  <summary>**ANSWER**</summary>
+  <p>
 
 (a) Kruskal's algorithm uses a priority queue from lowest to highest value and then uses a union find data structure to find the minimal spanning tree. It goes through each edge and finds whether the component 1 already exists within a tree of component 2 and vice versa (this will prevent creation of cycles). If the components are not in the same tree then the algorithm will union the two components together. Once there are no more components to match and the algorithm has reached the destination vertex, the algorithm is finished. 
 
@@ -22,3 +23,5 @@ A spanning forest being a forest that spans all of the vertices, meaning only th
 (c) Use either of the algorithms in a or b.
 
 (d) For this you would use Dijsktra's algorithm to find the maximum sum of edges to the destination vertex. Dijsktra's algorithm will hold an array of all the vertices and their respective vertex value. Then it will have another array that will hold the sum of each value at each vertex in the vertex value array. It will go through the entire set of vertices and for each vertex it will take the total of the vertex it is visiting (the max sum of edge values needed to get to that vertex) and the value of the edge that is connected to the neighboring vertex. At the end return the value that is the index of the destination vertex that is given. 
+</p>
+</details>
