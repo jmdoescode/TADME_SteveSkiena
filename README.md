@@ -6,6 +6,7 @@ The structure is as follows...
 All projects are prefixed with the chapter.
 For each chapter there are 
 - Answers
+- Pictures
 - Practices
 - Console Application with chapter prefix, two underscores, and the chapter name (so that in the solution it will be the top project) (ie: Ch06__WeightedGraphs)
 
@@ -23,6 +24,10 @@ These were created this way so that I can quickly practice any algorithm, data s
 The Answers project holds the answers for everything in the Practices project. 
 
 - Along with the prefixes for the Practices project, all files in the Answers project will be prefixed with "A" to denote an answer file.
+
+**Pictures**
+
+These are supplemental pictures to some of the files that are created. They are prefixed with chapter, chapter number, and either data structure, algorithm, or question to signify what the picture is supplementing.
 
 **Console Application**
 
