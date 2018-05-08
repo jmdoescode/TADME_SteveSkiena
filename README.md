@@ -17,13 +17,15 @@ The Practices project holds folders for Algorithms, Data Structures, and Questio
 - All Data Structure files will be prefixed with "DS" and the number in which it was created.
 - All Questions will be prefixed with "Q" and the number in which it was created.
 
-These were created this way so that I can quickly practice any algorithm, data structure, or question that I have created and have an answer to. This way I can focus on the heart of the problem while I have already created a way in which to test if the solution for the practice is correct. These files can also hold Hints in the comments so it will be easier to work on a problem without looking at the answer right away if you are stuck.
+These were created this way so that I can quickly practice any algorithm, data structure, or question that I have created and have an answer to. This way I can focus on the heart of the problem while I have already created a way in which to test if the solution for the practice is correct. These files can also hold Hints in the comments so it will be easier to work on a problem without looking at the answer right away if you are stuck. If the file has no coding aspect then there will be no practice file.
 
 **Answers**
 
 The Answers project holds the answers for everything in the Practices project. 
 
 - Along with the prefixes for the Practices project, all files in the Answers project will be prefixed with "A" to denote an answer file.
+
+To make things simpler, some answers will have collapsible and expandable areas for the answers if there is no coding involved. Hiding the answer is all that is needed for practice.
 
 **Pictures**
 
