@@ -3,9 +3,11 @@
 (b) Let P={s,…,t} describe a shortest weighted path between vertices s and t of a weighted graph G. Construct a new graph G′ by adding a weight of k to every edge of G. Does P describe a shortest path from s to t in G′? Prove the statement or give a counterexample.
 
 
-**ANSWERS**
-
-(a) Depends on the weight of k. if (k * numOfEdges in T <= sum of T) then yes
+<details>
+  <summary>**ANSWER**</summary>
+  <p>
+  
+  (a) Depends on the weight of k. if (k * numOfEdges in T <= sum of T) then yes
 
 From online: Probably yes. Using Kruskal's algorithm, you'll still get the same insertion order of edges, regardless of how much you add or subtract from the edge weighting.
 
@@ -20,3 +22,8 @@ A -1-> B B -1-> C A -3-> C
 Shortest path from A to C is A->B->C.
 
 If we increase all weights by two, shortest path will change to A->C
+  
+</p>
+</details>
+
+
