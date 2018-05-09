@@ -297,3 +297,7 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Ch06_Answers/AnswersToQuestions/AQ_13_UnionFindDSUniversalSetOfNElements.md
+/Ch06_Answers/AnswersToQuestions/AQ_12_DesignEffDS.md
+/Ch06_Answers/AnswersToQuestions/AQ_11_PrimsKDifferentEdgeCosts.md
+/Ch06_Answers/AnswersToQuestions/AQ_10_FeedbackEdge.md

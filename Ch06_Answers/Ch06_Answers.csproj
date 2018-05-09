@@ -44,9 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AnswersToPractices\" />
+    <Folder Include="AnswersToAlgorithms\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="AnswersToQuestions\AQ_01_GraphsFromProblem5-1.md" />
     <None Include="AnswersToQuestions\AQ_02_MinimumEdge.md" />
     <None Include="AnswersToQuestions\AQ_03_MinimumEdge02.md" />
@@ -56,6 +57,10 @@
     <None Include="AnswersToQuestions\AQ_07_AddWeightKToEveryEdge.md" />
     <None Include="AnswersToQuestions\AQ_08_FindSmallestChange.md" />
     <None Include="AnswersToQuestions\AQ_09_MinimumWeightConnectedSubsetT.md" />
+    <None Include="AnswersToQuestions\AQ_10_FeedbackEdge.md" />
+    <None Include="AnswersToQuestions\AQ_11_PrimsKDifferentEdgeCosts.md" />
+    <None Include="AnswersToQuestions\AQ_12_DesignEffDS.md" />
+    <None Include="AnswersToQuestions\AQ_13_UnionFindDSUniversalSetOfNElements.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
