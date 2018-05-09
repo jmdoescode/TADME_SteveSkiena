@@ -47,6 +47,7 @@
     <Folder Include="AnswersToAlgorithms\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AnswersToQuestions\README.md" />
     <None Include="README.md" />
     <None Include="AnswersToQuestions\AQ_01_GraphsFromProblem5-1.md" />
     <None Include="AnswersToQuestions\AQ_02_MinimumEdge.md" />

@@ -1,5 +1,26 @@
 ﻿# Chapter 6 Notes
 
+## DEFINITIONS
+
+<details>
+<summary>**What is a spanning tree?**</summary>
+  <p>
+
+A spanning tree a subset of edges from E of graph G = (V, E) forming a tree connecting all vertices of V.
+
+  </p>
+</details>
+
+
+<details>
+<summary>**What is a minimum spanning tree?**</summary>
+  <p>
+
+Minimum spanning tree is the spanning tree whose sum of edge weights is as small as possible.
+
+  </p>
+</details>
+
 ---
 
 ## ALGORITHMS
