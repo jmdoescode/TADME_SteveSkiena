@@ -110,7 +110,7 @@ Steps:
 - You will now have the lowest value to get to any vertex from the starting vertex.
 - Return the value at the destination vertex. 
 
-Time complexity is O(n).
+Time complexity is O(n^2).
 
   </p>
 </details>
