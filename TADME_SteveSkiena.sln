@@ -21,10 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch05_Practices", "Ch05_Prac
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch06_Pictures", "Ch06_Pictures", "{5CF07648-8354-48ED-A849-A18AE836A8D2}"
 	ProjectSection(SolutionItems) = preProject
-		Ch06_Pictures\Ch06_DS_01_UnionFind_01.png = Ch06_Pictures\Ch06_DS_01_UnionFind_01.png
-		Ch06_Pictures\Ch06_DS_01_UnionFind_02.png = Ch06_Pictures\Ch06_DS_01_UnionFind_02.png
-		Ch06_Pictures\Ch06_DS_01_UnionFind_03.png = Ch06_Pictures\Ch06_DS_01_UnionFind_03.png
-		Ch06_Pictures\Ch06_Q01_FigureFrom_Ch05_Q01.PNG = Ch06_Pictures\Ch06_Q01_FigureFrom_Ch05_Q01.PNG
+		Ch06_Pictures\6_AQ_01_FigureFrom_Ch05_AQ_01.PNG = Ch06_Pictures\6_AQ_01_FigureFrom_Ch05_AQ_01.PNG
+		Ch06_Pictures\6_AQ_15_01.jpg = Ch06_Pictures\6_AQ_15_01.jpg
+		Ch06_Pictures\6_AQ_16_01.jpg = Ch06_Pictures\6_AQ_16_01.jpg
+		Ch06_Pictures\6_DS_01_UnionFind_01.png = Ch06_Pictures\6_DS_01_UnionFind_01.png
+		Ch06_Pictures\6_DS_01_UnionFind_02.png = Ch06_Pictures\6_DS_01_UnionFind_02.png
+		Ch06_Pictures\6_DS_01_UnionFind_03.png = Ch06_Pictures\6_DS_01_UnionFind_03.png
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06_Practices", "Ch06_Practices\Ch06_Practices.csproj", "{DD60EB89-5CB0-490E-88B2-28C2B8AE2857}"
