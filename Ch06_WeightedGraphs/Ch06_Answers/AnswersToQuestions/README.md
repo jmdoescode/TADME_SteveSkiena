@@ -307,7 +307,7 @@ A simple solution would be to run Dijsktra's or Floyd's algorithm for each verte
 
   No. The sum of multiple edges could outweight another path with shorter edges. 
 
-  ![alt text](/Ch06_Pictures/6_AQ_16_01.png "Figure_01")
+  ![alt text](../../Ch06_Pictures/6_AQ_16_01.jpg "Figure_01")
 
   </p>
 </details>
