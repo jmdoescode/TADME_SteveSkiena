@@ -42,5 +42,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AnswersToAlgorithms\" />
+    <Folder Include="AnswersToDataStructures\" />
+    <Folder Include="AnswersToQuestions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
