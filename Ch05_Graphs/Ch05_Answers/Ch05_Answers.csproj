@@ -40,12 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswersToAlgorithms\AAL_01_DepthFirstSearch.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_01_Graph.cs" />
+    <Compile Include="AnswersToQuestions\AQ_02_TopologicalSort_01.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="AnswersToAlgorithms\" />
-    <Folder Include="AnswersToDataStructures\" />
-    <Folder Include="AnswersToQuestions\" />
+    <None Include="AnswersToQuestions\AQ_01_BFS_DFS.md" />
+    <None Include="AnswersToQuestions\AQ_02_TopologicalSort.md" />
+    <None Include="AnswersToQuestions\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

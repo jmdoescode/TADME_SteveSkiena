@@ -40,12 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\AL_01_DepthFirstSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions\Q_02_TopologicalSort_01.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Algorithms\" />
     <Folder Include="DataStructures\" />
-    <Folder Include="Questions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ch05_Answers\Ch05_Answers.csproj">
+      <Project>{b963a605-bcbd-4b78-8783-1cd6da0eb365}</Project>
+      <Name>Ch05_Answers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

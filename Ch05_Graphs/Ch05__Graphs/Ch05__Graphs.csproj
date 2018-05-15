@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ch05_Answers\Ch05_Answers.csproj">
+      <Project>{b963a605-bcbd-4b78-8783-1cd6da0eb365}</Project>
+      <Name>Ch05_Answers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ch05_Practices\Ch05_Practices.csproj">
+      <Project>{f252f9a3-3eba-45bc-86a0-8f3e02013371}</Project>
+      <Name>Ch05_Practices</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
