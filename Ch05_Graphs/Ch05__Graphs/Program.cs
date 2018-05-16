@@ -36,9 +36,16 @@ namespace Ch05
             #region Algorithms
 
             Console.WriteLine("\n============================================================== AL_01_DepthFirstSeach");
-            DS01.Graph<int> graph_AL_01__1 = new DS01.Graph<int>();
-            DS01.AutoCreateGraph_02_Directed_int(graph_AL_01__1);
-            AL01.PrintResult_AL_01_DepthFirstSearch(graph_AL_01__1, 1, 5);
+            DS01.Graph<int> gAL01_01 = new DS01.Graph<int>();
+            DS01.AutoCreateGraph_02_Directed_int(gAL01_01);
+            AL01.PrintResult_AL_01_DepthFirstSearch(gAL01_01, 1, 5);
+
+
+            Console.WriteLine("\n============================================================== AL_02_BreadthFirstSeach");
+            DS01.Graph<int> gAL02_01 = new DS01.Graph<int>();
+            DS01.AutoCreateGraph_02_Directed_int(gAL02_01);
+            AL01.PrintResult_AL_01_DepthFirstSearch(gAL02_01, 1, 5);
+
 
             #endregion
 

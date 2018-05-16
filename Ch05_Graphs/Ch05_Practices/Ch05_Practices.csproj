@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\AL_01_DepthFirstSearch.cs" />
+    <Compile Include="Algorithms\AL_02_BreadthFirstSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questions\Q_02_TopologicalSort_01.cs" />
   </ItemGroup>
