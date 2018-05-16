@@ -90,12 +90,19 @@ namespace Ch05
 
                 return result;
             }
+
+            public void ClearGraph()
+            {
+                nodeLookup.Clear();
+            }
         }
 
         #region Auto Create Graphs for testing purposes - pass in the graph
 
-        public static void AutoCreateGraph_01_Undirected(Graph<int> g)
+        public static void AutoCreateGraph_01_Undirected_int(Graph<int> g)
         {
+            g.ClearGraph();
+
             g.AddEdge(1, 2);
             g.AddEdge(1, 3);
             g.AddEdge(1, 4);
@@ -108,8 +115,10 @@ namespace Ch05
             g.AddEdge(7, 8);
         }
 
-        public static void AutoCreateGraph_02_Directed(Graph<int> g)
+        public static void AutoCreateGraph_02_Directed_int(Graph<int> g)
         {
+            g.ClearGraph();
+
             g.AddEdgeDirected(1, 2);
             g.AddEdgeDirected(1, 3);
             g.AddEdgeDirected(1, 4);
@@ -130,8 +139,10 @@ namespace Ch05
             g.AddEdgeDirected(7, 8);
         }
 
-        public static void AutoCreateGraph_03_TopSort_Directed_for_AQ_02(Graph<string> graph)
+        public static void AutoCreateGraph_03_TopSort_Directed_for_AQ_02_string(Graph<string> graph)
         {
+            graph.ClearGraph();
+
             graph.AddEdgeDirected("A", "B");
             graph.AddEdgeDirected("B", "C");
             graph.AddEdgeDirected("C", "F");
@@ -155,8 +166,10 @@ namespace Ch05
             graph.AddEdgeDirected("A", "D");
         }
 
-        public static void AutoCreateGraph_04_TopSort_Directed(Graph<string> graph)
+        public static void AutoCreateGraph_04_TopSort_Directed_string(Graph<string> graph)
         {
+            graph.ClearGraph();
+
             graph.AddEdgeDirected("A", "C");
             graph.AddEdgeDirected("B", "C");
             graph.AddEdgeDirected("B", "D");
