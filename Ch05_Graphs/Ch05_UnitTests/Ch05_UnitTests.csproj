@@ -48,8 +48,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UT_Q_02_TopSort_01.cs" />
-    <Compile Include="UT_AL_01_DFS.cs" />
+    <Compile Include="UT_Questions.cs" />
+    <Compile Include="UT_Algorithms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

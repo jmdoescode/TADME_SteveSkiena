@@ -9,7 +9,7 @@ namespace Ch05
     using Q02 = AQ_02_TopologicalSort_01<string>;
 
     [TestClass]
-    public class UT_Q_02_TopSort_01
+    public class UT_Questions
     {
         D1.Graph<string> g1 = new D1.Graph<string>();
 
