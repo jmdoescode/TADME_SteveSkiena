@@ -13,8 +13,11 @@ using System.Collections.Generic;
  *  Will work for undirected and directed graphs
  * */
 
-namespace Ch05.Algorithms
+namespace Ch05
 {
+
+    using D = ADS_01_Graph;
+
     public class AL_01_DepthFirstSearch<T>
     {
 
@@ -22,15 +25,14 @@ namespace Ch05.Algorithms
         //--------------------------------------------------------------------------------------
         // TODO: CODE Depth First Search HERE
 
-
-
+        
 
         //--------------------------------------------------------------------------------------
         //======================================================================================		
 
 
 
-        #region Given code - for debug only - uncomment when ready
+        #region Given code - for debug only - uncomment if needed
 
         ///// <summary>
         ///// Prints the results of the HasPathDFS method 
@@ -38,7 +40,7 @@ namespace Ch05.Algorithms
         ///// <param name="graph"></param>
         ///// <param name="source"></param>
         ///// <param name="destination"></param>
-        //public static void PrintResult_AL_01_DepthFirstSearch(DS01.Graph<T> graph, T source, T destination)
+        //public static void PrintResult_AL_01_DepthFirstSearch(D.Graph<T> graph, T source, T destination)
         //{
         //    bool result = HasPathDFS(graph, source, destination);
         //    Console.Write("\n\n- AL_01 - Depth-First Search: ");

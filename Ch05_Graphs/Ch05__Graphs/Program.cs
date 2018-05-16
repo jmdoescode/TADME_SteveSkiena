@@ -23,7 +23,7 @@ namespace Ch05
     //==================================================================
     #region Questions
 
-    using Q01 = AQ_02_TopologicalSort_01<string>;
+    using Q02 = AQ_02_TopologicalSort_01<string>;
 
     #endregion
 
@@ -37,7 +37,7 @@ namespace Ch05
 
             Console.WriteLine("\n============================================================== AL_01_DepthFirstSeach");
             DS01.Graph<int> graph_AL_01__1 = new DS01.Graph<int>();
-            DS01.AutoCreateGraph_02_Directed(graph_AL_01__1);
+            DS01.AutoCreateGraph_02_Directed_int(graph_AL_01__1);
             AL01.PrintResult_AL_01_DepthFirstSearch(graph_AL_01__1, 1, 5);
 
             #endregion
@@ -49,9 +49,9 @@ namespace Ch05
 
             Console.WriteLine("\n============================================================== Q_02 - 01 - Topological Sort");
             DS01.Graph<string> graphAQ02_01__1 = new DS01.Graph<string>();
-            DS01.AutoCreateGraph_03_TopSort_Directed_for_AQ_02(graphAQ02_01__1); 
+            DS01.AutoCreateGraph_03_TopSort_Directed_for_AQ_02_string(graphAQ02_01__1); 
             graphAQ02_01__1.PrintGraph();
-            Q01.PrintAllSort(graphAQ02_01__1);
+            Q02.PrintAllSort(graphAQ02_01__1);
 
             #endregion
         }
