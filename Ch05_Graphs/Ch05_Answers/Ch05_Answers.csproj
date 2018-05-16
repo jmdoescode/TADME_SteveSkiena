@@ -50,6 +50,8 @@
   <ItemGroup>
     <None Include="AnswersToQuestions\AQ_01_BFS_DFS.md" />
     <None Include="AnswersToQuestions\AQ_02_TopologicalSort.md" />
+    <None Include="AnswersToQuestions\AQ_03_UniquePath.md" />
+    <None Include="AnswersToQuestions\AQ_04_TreeAndCrossEdge.md" />
     <None Include="AnswersToQuestions\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
