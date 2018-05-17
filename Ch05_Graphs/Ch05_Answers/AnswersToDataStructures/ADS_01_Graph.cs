@@ -179,6 +179,35 @@ namespace Ch05
             graph.AddEdgeDirected("F", "G");
         }
 
+        public static void AutoCreateGraph_05_NoNodes_int(Graph<int> graph)
+        {
+            graph.ClearGraph();
+        }
+
+        public static void AutoCreateGraph_06_1Node_int(Graph<int> graph)
+        {
+            graph.ClearGraph();
+
+            graph.AddNode(1);
+        }
+
+        public static void AutoCreateGraph_07_2Nodes_int(Graph<int> graph)
+        {
+            graph.ClearGraph();
+
+            graph.AddNode(1);
+            graph.AddNode(2);
+        }
+
+        public static void AutoCreateGraph_08_Directed_1UnconnectedNode_int(Graph<int> graph)
+        {
+            graph.ClearGraph();
+
+            graph.AddNode(1);
+            graph.AddEdge(2, 3);
+        }
+
+
         #endregion
     }
 }

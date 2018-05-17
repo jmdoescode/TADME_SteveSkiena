@@ -30,7 +30,10 @@ namespace Ch05
         /// <returns>Whether or not a path exists to a destination node from a source node.</returns>
         public static bool HasPathDFS(DS01.Graph<T> graph, T source, T destination)
         {
-            HashSet<DS01.Node<T>> visited = new HashSet<DS01.Node<T>>();
+            //base case if there is no destination node
+            if (graph.GetNode(destination) == null) return false;
+
+            HashSet<DS01.Node<T>> visited = new HashSet<DS01.Node<T>>();            
             return HasPathDFSUtil(graph.GetNode(source), graph.GetNode(destination), visited);
         }
 
@@ -45,7 +48,7 @@ namespace Ch05
         static bool HasPathDFSUtil(DS01.Node<T> source, DS01.Node<T> destination, HashSet<DS01.Node<T>> visited)
         {
             // If the visited hash set does not contain the node, then add it to the hash set otherwise return false for having already visited it
-            if (visited.Contains(source))
+            if (visited.Contains(source) || source == null)
                 return false;
             else
                 visited.Add(source);

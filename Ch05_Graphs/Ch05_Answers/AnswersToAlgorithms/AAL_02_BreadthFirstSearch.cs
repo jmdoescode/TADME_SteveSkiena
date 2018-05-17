@@ -30,6 +30,9 @@ namespace Ch05
         /// <returns>Whether or not a path exitst from the source node to the destination node.</returns>
         public static bool HasPathBFS(D.Graph<T> graph, T source, T destination)
         {
+            // Base case if there is no destination node
+            if (destination == null) return false;
+
             HashSet<D.Node<T>> visited = new HashSet<D.Node<T>>();          // Hash set of visited nodes
             Queue<D.Node<T>> notYetVisited = new Queue<D.Node<T>>();        // Queue of nodes to be visited
             D.Node<T> s = graph.GetNode(source);                            // Source node
@@ -43,6 +46,7 @@ namespace Ch05
             {
                 // Get 1 node from queue and add it to the hash set of visited nodes
                 D.Node<T> current = notYetVisited.Dequeue();
+                if (current == null) continue;
                 visited.Add(current);
 
                 // You have reached the destination
