@@ -21,14 +21,14 @@ namespace Ch05
         /// </summary>
         /// <param name="graph">The graph that needs to be sorted</param>
         /// <returns>A topologically sorted list of nodes in the graph.</returns>
-        public static List<DS01.Node<T>> TopSort(DS01.Graph<T> graph)
+        public static List<Node<T>> TopSort(DS01.Graph<T> graph)
         {
-            List<DS01.Node<T>> stack = new List<DS01.Node<T>>();                // Is a list but is used as a stack
-            HashSet<DS01.Node<T>> visited = new HashSet<DS01.Node<T>>();        // Nodes that have already been visited
+            List<Node<T>> stack = new List<Node<T>>();                // Is a list but is used as a stack
+            HashSet<Node<T>> visited = new HashSet<Node<T>>();        // Nodes that have already been visited
 
             // Iterates through all the nodes in the graph and calls TopSortUtil
             // TopSortUtil is a DFS algorithm that will add the last node as the first item in the stack
-            foreach (DS01.Node<T> node in graph.GetAllNodes())
+            foreach (Node<T> node in graph.GetAllNodes())
             {
                 if (visited.Contains(node))
                 {
@@ -49,7 +49,7 @@ namespace Ch05
         /// <param name="node">The node that needs to be sorted</param>
         /// <param name="stack">The list which acts a stack</param>
         /// <param name="visited">Hash set of visited nodes</param>
-        private static void TopSortUtil(DS01.Node<T> node, List<DS01.Node<T>> stack, HashSet<DS01.Node<T>> visited)
+        private static void TopSortUtil(Node<T> node, List<Node<T>> stack, HashSet<Node<T>> visited)
         {
             // Node is not yet added to list so add it
             visited.Add(node);
@@ -58,7 +58,7 @@ namespace Ch05
             // If the visited list does not contain the node then recurse passing in new node
             // Will insert the very last element at the beginning of the list (hence a stack)
             // The very last element is the last node that has no more children
-            foreach (DS01.Node<T> child in node.Adjacent)
+            foreach (Node<T> child in node.Adjacent)
             {
                 if (!visited.Contains(child))
                 {
@@ -75,10 +75,10 @@ namespace Ch05
         /// <param name="graph">Graph that needs to be sorted</param>
         public static void PrintAllSort(DS01.Graph<T> graph)
         {
-            List<DS01.Node<T>> result = TopSort(graph);
+            List<Node<T>> result = TopSort(graph);
             Console.Write("\n\n- AQ_02_TopSort_01 - Topological Sort: ");
             Console.Write("\n\n\t");
-            foreach (DS01.Node<T> node in result)
+            foreach (Node<T> node in result)
             {
                 Console.Write($"->{node.Id.ToString()}");
             }

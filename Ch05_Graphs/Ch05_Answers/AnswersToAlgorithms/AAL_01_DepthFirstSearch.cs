@@ -33,7 +33,7 @@ namespace Ch05
             //base case if there is no destination node
             if (graph.GetNode(destination) == null) return false;
 
-            HashSet<DS01.Node<T>> visited = new HashSet<DS01.Node<T>>();            
+            HashSet<Node<T>> visited = new HashSet<Node<T>>();            
             return HasPathDFSUtil(graph.GetNode(source), graph.GetNode(destination), visited);
         }
 
@@ -45,7 +45,7 @@ namespace Ch05
         /// <param name="destination">The ending node</param>
         /// <param name="visited">Hash set of visited nodes</param>
         /// <returns>Whether or not the source is the destination or to put it simply whether or not a path exists to a node</returns>
-        static bool HasPathDFSUtil(DS01.Node<T> source, DS01.Node<T> destination, HashSet<DS01.Node<T>> visited)
+        static bool HasPathDFSUtil(Node<T> source, Node<T> destination, HashSet<Node<T>> visited)
         {
             // If the visited hash set does not contain the node, then add it to the hash set otherwise return false for having already visited it
             if (visited.Contains(source) || source == null)
@@ -58,7 +58,7 @@ namespace Ch05
 
             // Iterate through the children of the source node
             // If the child has not been visited then recurse the method passing in the child to see if the child is the destination node and return true if it is
-            foreach(DS01.Node<T> child in source.Adjacent)
+            foreach(Node<T> child in source.Adjacent)
             {
                 if(!visited.Contains(child))
                 {

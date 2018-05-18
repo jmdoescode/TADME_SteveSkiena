@@ -6,18 +6,6 @@ namespace Ch05
 {   
     public class ADS_01_Graph
     {
-        public class Node<T>
-        {
-            public T Id { get; set; }
-            public LinkedList<Node<T>> Adjacent { get; set; }
-
-            public Node(T _id)
-            {
-                this.Id = _id;
-                this.Adjacent = new LinkedList<Node<T>>();
-            }
-        }
-
         public class Graph<T>
         {
             private Dictionary<T, Node<T>> nodeLookup = new Dictionary<T, Node<T>>();

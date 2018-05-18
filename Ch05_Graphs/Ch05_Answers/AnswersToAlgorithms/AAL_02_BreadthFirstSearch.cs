@@ -33,10 +33,10 @@ namespace Ch05
             // Base case if there is no destination node
             if (destination == null) return false;
 
-            HashSet<D.Node<T>> visited = new HashSet<D.Node<T>>();          // Hash set of visited nodes
-            Queue<D.Node<T>> notYetVisited = new Queue<D.Node<T>>();        // Queue of nodes to be visited
-            D.Node<T> s = graph.GetNode(source);                            // Source node
-            D.Node<T> d = graph.GetNode(destination);                       // Destination node
+            HashSet<Node<T>> visited = new HashSet<Node<T>>();          // Hash set of visited nodes
+            Queue<Node<T>> notYetVisited = new Queue<Node<T>>();        // Queue of nodes to be visited
+            Node<T> s = graph.GetNode(source);                            // Source node
+            Node<T> d = graph.GetNode(destination);                       // Destination node
 
             // Enqueue node as the first node to be checked
             notYetVisited.Enqueue(s);
@@ -45,7 +45,7 @@ namespace Ch05
             while(notYetVisited.Count > 0)
             {
                 // Get 1 node from queue and add it to the hash set of visited nodes
-                D.Node<T> current = notYetVisited.Dequeue();
+                Node<T> current = notYetVisited.Dequeue();
                 if (current == null) continue;
                 visited.Add(current);
 
@@ -53,7 +53,7 @@ namespace Ch05
                 if (current == d) return true;
 
                 // Insert the children of the node into the queue if they have not yet been visited
-                foreach(D.Node<T> child in current.Adjacent)
+                foreach(Node<T> child in current.Adjacent)
                 {
                     if(!visited.Contains(child))
                     {
