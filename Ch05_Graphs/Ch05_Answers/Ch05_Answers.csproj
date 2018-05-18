@@ -42,8 +42,12 @@
   <ItemGroup>
     <Compile Include="AnswersToAlgorithms\AAL_01_DepthFirstSearch.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_02_BreadthFirstSearch.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_02_AdjacencyMatrix.cs" />
     <Compile Include="AnswersToDataStructures\ADS_01_Graph.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_03_Vertex.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_04_Node.cs" />
     <Compile Include="AnswersToQuestions\AQ_02_TopologicalSort_01.cs" />
+    <Compile Include="AnswersToQuestions\AQ_08_ConvertBetweenDataStructures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -52,6 +56,10 @@
     <None Include="AnswersToQuestions\AQ_02_TopologicalSort.md" />
     <None Include="AnswersToQuestions\AQ_03_UniquePath.md" />
     <None Include="AnswersToQuestions\AQ_04_TreeAndCrossEdge.md" />
+    <None Include="AnswersToQuestions\AQ_05_ChromaticNumOfGraphs.md" />
+    <None Include="AnswersToQuestions\AQ_06_SimultaneouslyDiscovered.md" />
+    <None Include="AnswersToQuestions\AQ_07_ReconstructTree.md" />
+    <None Include="AnswersToQuestions\AQ_08_ConvertBetweenDataStructures.md" />
     <None Include="AnswersToQuestions\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

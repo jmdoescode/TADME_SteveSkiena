@@ -17,6 +17,7 @@ namespace Ch05
     #region Data Structures
 
     using DS01 = ADS_01_Graph;
+    using DS02 = ADS_02_AdjacencyMatrix;
 
     #endregion
 
@@ -24,6 +25,7 @@ namespace Ch05
     #region Questions
 
     using Q02 = AQ_02_TopologicalSort_01<string>;
+    using Q08 = AQ_08_ConvertBetweenDataStructures<int>;
 
     #endregion
 
@@ -59,6 +61,13 @@ namespace Ch05
             DS01.AutoCreateGraph_03_TopSort_Directed_for_AQ_02_string(graphAQ02_01__1); 
             graphAQ02_01__1.PrintGraph();
             Q02.PrintAllSort(graphAQ02_01__1);
+
+
+            Console.WriteLine("\n==============================================================AQ_08 - 01 Convert from matrix to adjacency list\n");
+            Q08 Q08 = new Q08();
+            int[,] matrix = DS02.AutoCreateMatrix_01_Undirected();
+            DS02.PrintMatrix(matrix);
+            Q08.PrintAdjList(Q08.ConvertFrom_01_AdjMatrix_To_AdjList(matrix));
 
             #endregion
         }
