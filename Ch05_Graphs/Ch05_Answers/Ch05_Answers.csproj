@@ -46,12 +46,18 @@
     <Compile Include="AnswersToDataStructures\ADS_01_Graph.cs" />
     <Compile Include="AnswersToDataStructures\ADS_03_Vertex.cs" />
     <Compile Include="AnswersToDataStructures\ADS_04_Node.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_05_Tree.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_06_TreeNode.cs" />
     <Compile Include="AnswersToQuestions\AQ_02_TopologicalSort_01.cs" />
     <Compile Include="AnswersToQuestions\AQ_08_ConvertBetweenDataStructures.cs" />
+    <Compile Include="AnswersToQuestions\AQ_10_EvaluateDAG.cs" />
+    <Compile Include="AnswersToQuestions\AQ_11_WarStoryGraphGet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <None Include="AnswersToQuestions\AQ_26_MotherVertex.md" />
+    <None Include="AnswersToQuestions\AQ_27_Tournament.md" />
+    <None Include="AnswersToQuestions\AQ_28_ArticulationVertex.md" />
     <None Include="AnswersToQuestions\AQ_01_BFS_DFS.md" />
     <None Include="AnswersToQuestions\AQ_02_TopologicalSort.md" />
     <None Include="AnswersToQuestions\AQ_03_UniquePath.md" />
@@ -60,6 +66,27 @@
     <None Include="AnswersToQuestions\AQ_06_SimultaneouslyDiscovered.md" />
     <None Include="AnswersToQuestions\AQ_07_ReconstructTree.md" />
     <None Include="AnswersToQuestions\AQ_08_ConvertBetweenDataStructures.md" />
+    <None Include="AnswersToQuestions\AQ_09_EvaluateArithmeticTree.md" />
+    <None Include="AnswersToQuestions\AQ_10_EvaluateDAG.md" />
+    <None Include="AnswersToQuestions\AQ_11_WarStoryGraphGet.md" />
+    <None Include="AnswersToQuestions\AQ_12_SquareAGraph.md" />
+    <None Include="AnswersToQuestions\AQ_13_VertexCover.md" />
+    <None Include="AnswersToQuestions\AQ_14_VertexCoverDFS.md" />
+    <None Include="AnswersToQuestions\AQ_15_IndependentVertexCover.md" />
+    <None Include="AnswersToQuestions\AQ_16_IndependentSet.md" />
+    <None Include="AnswersToQuestions\AQ_17_TriangleInGraph.md" />
+    <None Include="AnswersToQuestions\AQ_18_MovieScheduling.md" />
+    <None Include="AnswersToQuestions\AQ_19_DiameterOfTree.md" />
+    <None Include="AnswersToQuestions\AQ_20_MaximumInducedSubGraph.md" />
+    <None Include="AnswersToQuestions\AQ_21_NumberOfDifferentShortestPaths.md" />
+    <None Include="AnswersToQuestions\AQ_22_EliminateEachVertexVOfDegree2.md" />
+    <None Include="AnswersToQuestions\AQ_23_IllBehavedChildren.md" />
+    <None Include="AnswersToQuestions\AQ_24_ConnectedComponents.md" />
+    <None Include="AnswersToQuestions\AQ_25_Aborescence.md" />
+    <None Include="AnswersToQuestions\AQ_29_NoDeletionDisconnects.md" />
+    <None Include="AnswersToQuestions\AQ_30_Bridge.md" />
+    <None Include="AnswersToQuestions\AQ_31_DSForBFSAndDFS.md" />
+    <None Include="AnswersToQuestions\AQ_32_TraverseBSTReturnINodeInSortedOrder.md" />
     <None Include="AnswersToQuestions\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

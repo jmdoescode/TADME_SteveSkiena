@@ -26,6 +26,7 @@ namespace Ch05
 
     using Q02 = AQ_02_TopologicalSort_01<string>;
     using Q08 = AQ_08_ConvertBetweenDataStructures<int>;
+    using Q10 = AQ_10_EvaluateDAG;
 
     #endregion
 
@@ -68,6 +69,12 @@ namespace Ch05
             int[,] matrix = DS02.AutoCreateMatrix_01_Undirected();
             DS02.PrintMatrix(matrix);
             Q08.PrintAdjList(Q08.ConvertFrom_01_AdjMatrix_To_AdjList(matrix));
+
+
+            Console.WriteLine("\n==============================================================AQ_10 - DAG Evaluation Algo\n");
+            Q10 AQ10 = new Q10();
+            AQ10.GetAnswer();
+            
 
             #endregion
         }
