@@ -87,7 +87,7 @@
     <None Include="AnswersToQuestions\AQ_30_Bridge.md" />
     <None Include="AnswersToQuestions\AQ_31_DSForBFSAndDFS.md" />
     <None Include="AnswersToQuestions\AQ_32_TraverseBSTReturnINodeInSortedOrder.md" />
-    <None Include="AnswersToQuestions\README.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

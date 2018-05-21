@@ -12,7 +12,7 @@
 
 <details>
 <summary>**ANSWER**</summary>
-  <p>
+  <p> 
 
   (a) BFS:
 
