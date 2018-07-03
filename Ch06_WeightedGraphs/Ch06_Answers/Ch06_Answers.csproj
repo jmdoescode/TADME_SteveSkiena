@@ -53,8 +53,6 @@
     <None Include="AnswersToQuestions\AQ_17_ShortestMinimumWeightPath.md" />
     <None Include="AnswersToQuestions\AQ_18_CheapestPath.md" />
     <None Include="AnswersToQuestions\AQ_19_DirectedCycleOfMinTotalWeight.md" />
-    <None Include="AnswersToQuestions\README.md" />
-    <None Include="README.md" />
     <None Include="AnswersToQuestions\AQ_01_GraphsFromProblem5-1.md" />
     <None Include="AnswersToQuestions\AQ_02_MinimumEdge.md" />
     <None Include="AnswersToQuestions\AQ_03_MinimumEdge02.md" />
@@ -68,6 +66,7 @@
     <None Include="AnswersToQuestions\AQ_11_PrimsKDifferentEdgeCosts.md" />
     <None Include="AnswersToQuestions\AQ_12_DesignEffDS.md" />
     <None Include="AnswersToQuestions\AQ_13_UnionFindDSUniversalSetOfNElements.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

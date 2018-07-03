@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch06_WeightedGraphs", "Ch06_WeightedGraphs", "{99928596-B46B-4DB8-BC11-04E1EFB8F553}"
+	ProjectSection(SolutionItems) = preProject
+		Ch06_WeightedGraphs\README.md = Ch06_WeightedGraphs\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch05_Graphs", "Ch05_Graphs", "{092D92D5-F626-4FF8-A550-FB7C106D52E0}"
 EndProject
@@ -41,6 +44,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch05_Pictures", "Ch05_Pictu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch05_UnitTests", "Ch05_Graphs\Ch05_UnitTests\Ch05_UnitTests.csproj", "{E0303158-A7EA-474D-9DC2-A24E9F43DEF7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch04_SortingAndSearching", "Ch04_SortingAndSearching", "{3E07C16D-B75C-4A79-BDB0-90054F489E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04__SortingAndSearching", "Ch04_SortingAndSearching\Ch04__SortingAndSearching\Ch04__SortingAndSearching.csproj", "{5731BFD4-E32B-4B89-84D1-0D13EC26A40D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_Answers", "Ch04_SortingAndSearching\Ch04_Answers\Ch04_Answers.csproj", "{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_Practices", "Ch04_SortingAndSearching\Ch04_Practices\Ch04_Practices.csproj", "{774E3393-432D-4334-8449-744FCB257445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_UnitTests", "Ch04_SortingAndSearching\Ch04_UnitTests\Ch04_UnitTests.csproj", "{E360E328-8EF1-4576-95CF-A5937F9AD6C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +88,22 @@ Global
 		{E0303158-A7EA-474D-9DC2-A24E9F43DEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0303158-A7EA-474D-9DC2-A24E9F43DEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0303158-A7EA-474D-9DC2-A24E9F43DEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5731BFD4-E32B-4B89-84D1-0D13EC26A40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5731BFD4-E32B-4B89-84D1-0D13EC26A40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5731BFD4-E32B-4B89-84D1-0D13EC26A40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5731BFD4-E32B-4B89-84D1-0D13EC26A40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774E3393-432D-4334-8449-744FCB257445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774E3393-432D-4334-8449-744FCB257445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774E3393-432D-4334-8449-744FCB257445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774E3393-432D-4334-8449-744FCB257445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E360E328-8EF1-4576-95CF-A5937F9AD6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E360E328-8EF1-4576-95CF-A5937F9AD6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E360E328-8EF1-4576-95CF-A5937F9AD6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E360E328-8EF1-4576-95CF-A5937F9AD6C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +118,10 @@ Global
 		{F252F9A3-3EBA-45BC-86A0-8F3E02013371} = {092D92D5-F626-4FF8-A550-FB7C106D52E0}
 		{367AFB44-80C9-467E-85E4-FA8C4ABD376F} = {092D92D5-F626-4FF8-A550-FB7C106D52E0}
 		{E0303158-A7EA-474D-9DC2-A24E9F43DEF7} = {092D92D5-F626-4FF8-A550-FB7C106D52E0}
+		{5731BFD4-E32B-4B89-84D1-0D13EC26A40D} = {3E07C16D-B75C-4A79-BDB0-90054F489E51}
+		{7B655ABE-FE80-4960-8CFA-88DC61CC66EC} = {3E07C16D-B75C-4A79-BDB0-90054F489E51}
+		{774E3393-432D-4334-8449-744FCB257445} = {3E07C16D-B75C-4A79-BDB0-90054F489E51}
+		{E360E328-8EF1-4576-95CF-A5937F9AD6C8} = {3E07C16D-B75C-4A79-BDB0-90054F489E51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E0D52FA-3DE9-48A6-8750-67481E05BE73}
