@@ -53,6 +53,13 @@
     <None Include="AnswersToQuestions\AQ_04_RedBlueYellow.md" />
     <None Include="AnswersToQuestions\AQ_06_S1S2PairAddUpToX.md" />
     <None Include="AnswersToQuestions\AQ_07_ReasonableMethodForProblems.md" />
+    <None Include="AnswersToQuestions\AQ_08_2ElementsOfSWhoseSumIsX.md" />
+    <None Include="AnswersToQuestions\AQ_09_UnionOfSetsAB.md" />
+    <None Include="AnswersToQuestions\AQ_10_KOfIntegersInSAddUpToT.md" />
+    <None Include="AnswersToQuestions\AQ_11_N2AndN4.md" />
+    <None Include="AnswersToQuestions\AQ_12_KSmallestUnsortedSet.md" />
+    <None Include="AnswersToQuestions\AQ_13_MaxHeapSortedArrayBetterDataStructure.md" />
+    <None Include="AnswersToQuestions\AQ_14_MergeKTotalNIntoOneSortedList.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

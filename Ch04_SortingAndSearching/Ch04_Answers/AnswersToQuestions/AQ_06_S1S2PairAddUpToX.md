@@ -6,10 +6,10 @@
   <p>
 
 1. Sort S1; O(n log n)
-2. for i=0 to n-1
-    val = x - S2[i]
-    if binary_search(S1, val) O(log n)
-        return (val, S2[i])
+2. for i=0 to n-1  
+    val = x - S2[i]  
+    if binary_search(S1, val) O(log n)  
+	&nbsp;&nbsp;&nbsp;&nbsp;return (val, S2[i])  
 End Loop
 
   </p>
