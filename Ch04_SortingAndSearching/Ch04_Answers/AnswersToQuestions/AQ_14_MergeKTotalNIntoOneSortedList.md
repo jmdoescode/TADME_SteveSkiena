@@ -21,4 +21,4 @@ Further, we can insert the new head of this list in the heap in O(logk) time.
 An alternate O(nlogk) approach would be to merge the lists from as in mergesort, using a binary tree on k leaves (one for each list)
 
   </p>
-</details>
+</details>

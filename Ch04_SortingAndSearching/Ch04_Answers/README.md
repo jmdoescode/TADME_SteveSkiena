@@ -126,7 +126,15 @@ return the max
 End Loop
 
   </p>
-</details>---4-7. Outline a reasonable method of solving each of the following problems. Give the order of the worst-case complexity of your methods.
+</details>
+
+
+
+
+---
+
+
+4-7. Outline a reasonable method of solving each of the following problems. Give the order of the worst-case complexity of your methods.
 
 a) You are given a pile of thousands of telephone bills and thousands of checks sent in to pay the bills. Find out who did not pay.
 
@@ -155,7 +163,13 @@ c) Create a HashSet with all the names.
 	Did not use a list here because HashSets are better at finding a value than lists. Lists will have to iterate from first to last to find the key while dictionaries us individual buckets.
 
   </p>
-</details>---4-8. Given a set of S containing n real numbers, and a real number x. We seek an algorithm to determine whether two elements of S exist whose sum is exactly x.
+</details>
+
+
+---
+
+
+4-8. Given a set of S containing n real numbers, and a real number x. We seek an algorithm to determine whether two elements of S exist whose sum is exactly x.
 
 a) Assume that S is unsorted. Give an O(nlogn) algorithm for the problem.
    
@@ -213,7 +227,14 @@ Solution 2
     looking for the right pair...
 
   </p>
-</details>---4-9. Give an efficient algorithm to compute the union of sets A and B, where n=max(|A|,|B|). The output should be an array of distinct elements that form the union of the sets, such that they appear more than once in the union.
+</details>
+
+
+
+---
+
+
+4-9. Give an efficient algorithm to compute the union of sets A and B, where n=max(|A|,|B|). The output should be an array of distinct elements that form the union of the sets, such that they appear more than once in the union.
 
 a) Assume that A and B are unsorted. Give an O(nlogn) algorithm for the problem.
 
@@ -239,7 +260,13 @@ b) A and B are sorted (assume in ascending order). The fact that the sets are so
 
 
   </p>
-</details>---4-10. Given a set S of n integers and an integer T, give an O(n^(k−1) logn) algorithm to test whether k of the integers in S add up to T. 
+</details>
+
+
+---
+
+
+4-10. Given a set S of n integers and an integer T, give an O(n^(k−1) logn) algorithm to test whether k of the integers in S add up to T. 
 
 <details>
 <summary>**ANSWER**</summary>
@@ -255,7 +282,13 @@ and repeat
 
 
   </p>
-</details>---4-11. Design an O(n) algorithm that, given a list of n elements, finds all the elements that appear more than n/2 times in the list. Then, design an O(n) algorithm that, given a list of n elements, finds all the elements that appear more than n/4 times.
+</details>
+
+
+---
+
+
+4-11. Design an O(n) algorithm that, given a list of n elements, finds all the elements that appear more than n/2 times in the list. Then, design an O(n) algorithm that, given a list of n elements, finds all the elements that appear more than n/4 times.
 
 <details>
 <summary>**ANSWER**</summary>
@@ -269,7 +302,14 @@ iterate putting each value into a dictionary increment the count if it does not 
 &nbsp;&nbsp;&nbsp; third value of dictionary > n/2 is last value and you can stop  
 
   </p>
-</details>---4-12. Devise an algorithm for finding the k smallest elements of an unsorted set of n integers in O(n+klogn).
+</details>
+
+
+
+---
+
+
+4-12. Devise an algorithm for finding the k smallest elements of an unsorted set of n integers in O(n+klogn).
 
 <details>
 <summary>**ANSWER**</summary>
@@ -280,7 +320,13 @@ Then extract from the heap k times to get the smallest k elements using O(klogn)
 Thus the total time is O(n+klogn).  
 
   </p>
-</details>---4-13. You wish to store a set of n numbers in either a max-heap or a sorted array. For each application below, state which data structure is better, or if it does not matter. Explain your answers.
+</details>
+
+
+---
+
+
+4-13. You wish to store a set of n numbers in either a max-heap or a sorted array. For each application below, state which data structure is better, or if it does not matter. Explain your answers.
 
 a) Want to find the maximum element quickly.  
 b) Want to be able to delete an element quickly.  
@@ -304,4 +350,110 @@ d) max-heap - O(n)
 &nbsp;&nbsp;&nbsp; sorted array - O(1)
 
   </p>
-</details>---
+</details>
+
+
+
+---
+
+
+4-14. Give an O(nlogk)-time algorithm that merges k sorted lists with a total of n elements into one sorted list. (Hint: use a heap to speed up the elementary O(kn)-time algorithm).
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+Iterate through k sorted lists getting minimum value of each one and updating the min value  
+When you upate the min value save the list and update that index and subtract index of last one if it has been updated  
+Then insert that value into a new list  
+
+---
+
+Scan through all k lists in any order and use the stream of elements to build a heap of k elements. Since bubble_down works in O(logk) for a heap of k elements, we thus solve the problem in O(nlogk).
+
+The elementary algorithm compares the heads of each of the k sorted lists to find the minimum element, 
+puts this in the sorted list and repeats.  
+The total time is O(kn).  
+Suppose instead that we build a heap on the head elements of each of the k lists, with each element labeled as to which list it is from.  
+The minimum element can be found and deleted in O(logk) time.  
+Further, we can insert the new head of this list in the heap in O(logk) time.  
+An alternate O(nlogk) approach would be to merge the lists from as in mergesort, using a binary tree on k leaves (one for each list)
+
+  </p>
+</details>
+
+
+
+---
+
+
+4-15. (a) Give an efficient algorithm to find the second-largest key among n keys. You can do better than 2n−3 comparisons. (b) Then, give an efficient algorithm to find the third-largest key among n keys. How many key comparisons does your algorithm do in the worst case? Must your algorithm determine which key is largest and second-largest in the process?
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+1) You could max heapify the entire array of keys which takes O(n) time and then the elements below are either the second or third largest and you just compare those two.
+
+2) You can scan through the array of keys keeping max1, max2, and max3 variables and comparing them against the newest key.
+
+  </p>
+</details>
+
+
+---
+
+
+4-16. Use the partitioning idea of quicksort to give an algorithm that finds the median element of an array of n integers in expected O(n) time. (Hint: must you look at both sides of the partition?)
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+  the general form of this problem is to find the kth largest value. finding the median is when k = n/2.  
+
+    to find the kth largest value,
+
+    select a partition element and split the array into 2 sub-arrays - one with the elements smaller than the partition and one with the elements larger than the partition. O(n)
+
+    if the array with the elements larger than the partition has k - 1 elements, the partition is the kth largest element  
+    if the array with the elements larger than the partition has >= k elements, recurse with the same value of k using the larger elements as the new array. O(n/2) (average case)  
+    else the median is in the array with elements smaller than the partition so adjust k to account for the large elements being discarded and recurse using the smaller elements as the new array O(n/2) (average case)  
+    the overall complexity is O(n) since  
+
+    O(n) + O(n/2) + O(n/4) + ... approaches O(2n) which is just O(n) since 2 is a constant.
+
+
+    https://andonov.wordpress.com/2013/02/17/finding-the-largest-elements-in-an-array/
+
+  </p>
+</details>
+
+
+---
+
+
+4-17. The median of a set of n values is the ⌈n/2⌉th smallest value.
+
+Suppose quicksort always pivoted on the median of the current sub-array. How many comparisons would Quicksort make then in the worst case?  
+Suppose quicksort were always to pivot on the ⌈n/3⌉th smallest value of the current sub-array. How many comparisons would be made then in the worst case?  
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+    (a)  
+        half
+
+    (b)  
+        Let F(n) be the number of compares for a quicksort of size n, split into a section of size 1/3 and a section of size 2/3. The recurrence relation would be:
+
+        F(n) = n/3 + 2n/3 + F(n/3) + F(2n/3) = n + F(n/3) + F(2n/3)
+
+        In other words, the number of compares at size n is equal to the number of compares to do a top level partition (1/3 for one side, 2/3 for the other side), plus the number of compares to quicksort the 1/3 partition and the 2/3 partition.
+
+  </p>
+</details>

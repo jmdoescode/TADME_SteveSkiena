@@ -60,6 +60,9 @@
     <None Include="AnswersToQuestions\AQ_12_KSmallestUnsortedSet.md" />
     <None Include="AnswersToQuestions\AQ_13_MaxHeapSortedArrayBetterDataStructure.md" />
     <None Include="AnswersToQuestions\AQ_14_MergeKTotalNIntoOneSortedList.md" />
+    <None Include="AnswersToQuestions\AQ_15_Find3rdLargestAmongNKeys.md" />
+    <None Include="AnswersToQuestions\AQ_16_FindMediaElementOfArray.md" />
+    <None Include="AnswersToQuestions\AQ_17_MedianOfNTheN2SmallestValue.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
