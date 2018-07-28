@@ -40,10 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort.cs" />
+    <Compile Include="AnswersToQuestions\AQ_44_ImplementAStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AnswersToAlgorithms\" />
     <Folder Include="AnswersToDataStructures\" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +64,35 @@
     <None Include="AnswersToQuestions\AQ_15_Find3rdLargestAmongNKeys.md" />
     <None Include="AnswersToQuestions\AQ_16_FindMediaElementOfArray.md" />
     <None Include="AnswersToQuestions\AQ_17_MedianOfNTheN2SmallestValue.md" />
+    <None Include="AnswersToQuestions\AQ_18_RedWhiteBlue.md" />
+    <None Include="AnswersToQuestions\AQ_19_InversionPermutation.md" />
+    <None Include="AnswersToQuestions\AQ_20_RearrangeArrayOfNKeys.md" />
+    <None Include="AnswersToQuestions\AQ_21_StableSorting.md" />
+    <None Include="AnswersToQuestions\AQ_22_NPositiveIntInsRange1ToK.md" />
+    <None Include="AnswersToQuestions\AQ_23_SortNIntegersWithDups.md" />
+    <None Include="AnswersToQuestions\AQ_24_NMinusRootOfN.md" />
+    <None Include="AnswersToQuestions\AQ_25_LogLogN.md" />
+    <None Include="AnswersToQuestions\AQ_26_SortN0sAnd1sUsingComparison.md" />
+    <None Include="AnswersToQuestions\AQ_27_LineSegment.md" />
+    <None Include="AnswersToQuestions\AQ_28_LowerBound1.md" />
+    <None Include="AnswersToQuestions\AQ_29_LowerBound2MrBCDull.md" />
+    <None Include="AnswersToQuestions\AQ_30_10000SortedNames.md" />
+    <None Include="AnswersToQuestions\AQ_31_CircularlyShiftedKPositions.md" />
+    <None Include="AnswersToQuestions\AQ_32_20Questions.md" />
+    <None Include="AnswersToQuestions\AQ_33_SortedDistinctIntegers.md" />
+    <None Include="AnswersToQuestions\AQ_34_SortedDistinctIntegersNLessThanM.md" />
+    <None Include="AnswersToQuestions\AQ_35_NByMIntegerMatrix.md" />
+    <None Include="AnswersToQuestions\AQ_36_NByN.md" />
+    <None Include="AnswersToQuestions\AQ_37_AssessRelativePerformanceOfSorts.md" />
+    <None Include="AnswersToQuestions\AQ_38_ExternalSort.md" />
+    <None Include="AnswersToQuestions\AQ_39_ParallelSortingAlgo.md" />
+    <None Include="AnswersToQuestions\AQ_40_MillionIntegers.md" />
+    <None Include="AnswersToQuestions\AQ_41_DescribeAdvAndDisadvOfSortAlgos.md" />
+    <None Include="AnswersToQuestions\AQ_42_ReturnOnlyUnique.md" />
+    <None Include="AnswersToQuestions\AQ_43_ComputerWithOnly2Mb.md" />
+    <None Include="AnswersToQuestions\AQ_44_ImplementAStack.md" />
+    <None Include="AnswersToQuestions\AQ_45_StringOf3Words.md" />
+    <None Include="AnswersToQuestions\AQ_46_12Coins.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

@@ -399,7 +399,8 @@ An alternate O(nlogk) approach would be to merge the lists from as in mergesort,
 2) You can scan through the array of keys keeping max1, max2, and max3 variables and comparing them against the newest key.
 
   </p>
-</details>
+</details>
+
 
 
 ---
@@ -429,7 +430,8 @@ An alternate O(nlogk) approach would be to merge the lists from as in mergesort,
     https://andonov.wordpress.com/2013/02/17/finding-the-largest-elements-in-an-array/
 
   </p>
-</details>
+</details>
+
 
 
 ---
@@ -456,4 +458,366 @@ Suppose quicksort were always to pivot on the ⌈n/3⌉th smallest value of the 
         In other words, the number of compares at size n is equal to the number of compares to do a top level partition (1/3 for one side, 2/3 for the other side), plus the number of compares to quicksort the 1/3 partition and the 2/3 partition.
 
   </p>
-</details>
+</details>
+
+
+---
+
+
+4-18. Suppose an array A consists of n elements, each of which is red, white, or blue. We seek to sort the elements so that all the reds come before all the whites, which come before all the blues The only operation permitted on the keys are
+
+Examine(A,i) -- report the color of the ith element of A.  
+Swap(A,i,j) -- swap the ith element of A with the jth element.  
+Find a correct and efficient algorithm for red-white-blue sorting. There is a linear-time solution. This is also known as the Dutch national flag problem. The simplest linear time solution performs two passes of the partition operation from Quicksort. The first pass treats the red and white elements as indistinguishable, and separates them from the blue. The second pass is just separates the elements within the red/white sub-array.  
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+  Iterate through the elements to get count of red, white, and blue elements  
+    Index of red = 0 to redCount - 1   
+    Index of blue = redcount to (redcount + blue count - 1)  
+    Index of white = (redcount + bluecount) to array length - 1  
+
+    iterate through array  
+    swap with whatever color it is  
+    IF YOU WANT to swap a color but the item is not the correct color  
+    Then insert into a queue for each color and once you find a swappable color then swap  
+    for example  
+        [0]W will swap with B from 0 to 9   
+        [1]R will stay   
+        [2]B cannot swap with B from 2 to 3  
+            Put index 2 into red count queue if index 2 is < redCount (3)  
+        [3]B is okay  
+        [4]R can switch with index in redCount queue  
+        etc...  
+
+
+    |    R    |           B           |    W    |  
+    W - R - B - B - R - B - W - W - R - B - B - W  
+    0   1   2   3   4   5   6   7   8   9  10  11  
+    											   
+    R - R - R - B - B - B - B - B - B - W - W - W  
+
+
+
+    Should take O(2n) time  
+
+
+  </p>
+</details>
+
+
+---
+
+
+4-19. An inversion of a permutation is a pair of elements that are out of order.
+
+Show that a permutation of n items has at most n(n−1)/2 inversions. Which permutation(s) have exactly n(n−1)/2 inversions?  
+Let P be a permutation and Pr be the reversal of this permutation. Show that P and Pr have a total of exactly n(n−1)/2 inversions.  
+Use the previous result to argue that the expected number of inversions in a random permutation is n(n−1)/4.  
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+1) Starting from left to right, the number of inversions
+
+     for 1st number is n-1  
+     for 2nd number is n-2  
+     ...  
+     ..  
+     ....nth number is n-n = 0  
+    Total number of inversions is the sum of all of the above sum of integers from 0 to n - 1 = n(n-1)/2
+
+2. We know that the maximum num of inversions is n(n-1)/2.
+
+     Consider a permutation P.  
+     a1 a2 ai..ak...aj..am.... an-1 an  
+     ai and aj are out of order  
+     ak and am are in order.   
+     For Pr,  
+     ai and aj will get reversed, and will become in order.  
+     ak and am will get reversed and will become out of order.  
+     Every In order pair becomes an inversion.  
+     And every inversion becomes corrected.  
+  
+    If P contains "x" inversions.. then it also contained "n(n-1)/2 - x" in order pairs. Thus Pr contains "x" in order pairs and "n(n-1)/2 - x" inversions.
+
+    Summing up the inversions in P and Pr we get n(n-1)/2
+
+3. To calculate the max inversions in part 1, every ith position had n - i inversions. i.e following a number, all other numbers will be out of order. In the average case, we can argue that about 1/2 of the number will be out of order....
+
+     for 1st number  (n-1)/2  
+     for 2nd number   (n-2)/2  
+     ...  
+     ..  
+     ....nth number is (n-n)/2 = 0  
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-20. Give an efficient algorithm to rearrange an array of n keys so that all the negative keys precede all the nonnegative keys. Your algorithm must be in-place, meaning you cannot allocate another array to temporarily hold the items. How fast is your algorithm?
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	If order does not matter  
+    Iterate once to get the number of negative numbers  
+    The count will be the Pivot  
+    Left pointer starts at 0  
+    Right pointer starts at array Length - 1  
+    increment index of pointers and when left pointer is nonnegative and right pointer is negative then swap  
+    repeat until one of the pointers hits the pivot  
+
+    worst run time is O(2n) -> O(n)
+
+
+
+    ---------------------------------------------------------
+
+    If you partition the array with pivoting 0, all negative values appear before all other positive values. This can be done in linear time, O(n).
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-21. Stable sorting algorithms leave equal-key items in the same relative order as in the original permutation. Explain what must be done to ensure that mergesort is a stable sorting algorithm.
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+    The one you're merging on the left goes first (lower indexed value of the tie will go first)
+
+    ---------------------------------------------------
+
+    To guarantee mergesort is stable, when merging the two subarrays together, mergesort should settle ties in the lists by choosing the lower indexed value.
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-22. Show that n positive integers in the range 1 to k can be sorted in O(nlogk) time. The interesting case is when k<<n.
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+    Since we want O(logn) time, we could consider using a heap.  
+    Inserting each value in the 1 - k range takes O(logk) time.  
+    Afterwards, we can do a walk of the heap and successively retrieve the items in order.  
+    Takes O(nlogk) time in total.  
+
+    The heap values can hold the occurence count of each value in some extra memory storage.
+    
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-23. We seek to sort a sequence S of n integers with many duplications, such that the number of distinct integers in S is O(logn). Give an O(nloglogn) worst-case time algorithm to sort such sequences.
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	With a self-balancing binary search tree, we can achieve O(log k) search and insertion (where k is the number of elements in the tree).
+    
+    1. For each element in the sequence S, try and insert it into the tree.  
+    - If the element is present, we increment a count variable stored at a node.  
+    - If the element is not present, we insert the node and set the count = 1.  
+
+    2. Traverse the tree in order and add elements according to the count.
+
+    Since the tree is guaranteed not to exceed log n elements, search and insertion take O(log log n).  
+    Thus, this entire algorithm takes O(n * log log n + log n) = O(n * log log n) as required.  
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-24. Let A[1..n] be an array such that the first n−n√ elements are already sorted (though we know nothing about the remaining elements). Give an algorithm that sorts A in substantially better than nlogn steps.
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	The remaining √n unsorted elements can be sorted in O(√nlogn) time. Both sorted halves can be merged in O(n) time giving a total run time of *O(n) + O(√nlogn) which is dominated by O(n).
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-25. Assume that the array A[1..n] only has numbers from {1,…,n^2} but that at most loglogn of these numbers ever appear. Devise an algorithm that sorts A in substantially less than O(nlogn).
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	
+    Just as a reminder as of how slowly the log(log(n)) function grows:
+
+        n	    log(log(n))  
+        10	    0.83  
+        100	    1.53  
+        1000	1.93  
+        10000	2.22  
+
+        The array will therefore consist of only very few distinct numbers and all others will be repetitions. An idea to sort such an array is the following
+
+
+        First sweep through the original array and create two auxiliary arrays of numbers A′={a′1,a′2,a′3,…} (with ∃ i,j:ai=aj) and their repetition count N={n1,n2,n3,…} : this can be done in O(n) time  
+        Then sort the two arrays in parallel, comparing keys from A′ : this can be done in O(x log(x)) time with x=log(log(n))  
+        Finally recreate a sorted version of the original array by taking every number a′i and repeat it ni times : this can again be done in O(n) time  
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-26. Consider the problem of sorting a sequence of n 0's and 1's using comparisons. For each comparison of two values x and y, the algorithm learns which of x<y, x=y, or x>y holds.
+
+Give an algorithm to sort in n−1 comparisons in the worst case. Show that your algorithm is optimal.  
+Give an algorithm to sort in 2n/3 comparisons in the average case (assuming each of the n inputs is 0 or 1 with equal probability). Show that your algorithm is optimal.  
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	Choose a random pivot, it will either be 0 or 1; then do the remaining comparisions around it.  
+    Worst case is n-1 comparisions needed.
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-27. Let P be a simple, but not necessarily convex, polygon and q an arbitrary point not necessarily in P. Design an efficient algorithm to find a line segment originating from q that intersects the maximum number of edges of P. In other words, if standing at point q, in what direction should you aim a gun so the bullet will go through the largest number of walls. A bullet through a vertex of P gets credit for only one wall. An O(nlogn) algorithm is possible.
+
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+	Since a bullet through a vertex doesn't count as 2 walls, let's describe the polygon P in terms of pairs of points like [(x0,y1),(x2,y2)). That is, the first point will count as a wall, but the second will not.
+
+    Next, let's convert all of the points in P to polar notation. We don't actually need to store the radius, however, just the angle θ. Also, the polar notation is relative to q's location, (qx,qy), so for every point p in P we have θp=atan((py−qy)/(px−qx)). These calculations are done on every point, so a computational complexity of Θ(n).
+
+    Keep a list of the line segments, with points stored as pairs of angles relative to q, and sort them by the minimum of the two angles. It is okay to switch which angle comes first in a pair, but the pairs must move together when they are sorted. It is also important to preserve knowledge of which point was the source (closed interval) and which was the destination (open interval), so we don't count one vertex twice. This sorting costs O(n lg n), and it is the dominant factor in this algorithm.[ 
+
+    Finally, iterate through the sorted list of minimum elements, incrementing a counter whenever the start of a line segment is encountered, and decrementing the counter whenever a line segment ends.
+
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-28. sorting algorithm that runs in O(nlog(n√)). Given the existence of an Ω(nlogn) lower bound for sorting, how can this be possible? lower bound
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-29. Mr. B. C. Dull claims to have developed a new data structure for priority queues that supports the operations Insert, Maximum, and Extract-Max---all in O(1) worst-case time. Prove that he is mistaken. (Hint: the argument does not involve a lot of gory details---just think about what this would imply about the Ω(nlogn) lower bound for sorting.)
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+    If this claim was true one could construct a linear time sorting algorithm by inserting all elements and then extracting all maximum elements again. Since the lower bound of O(n log n) for searching this is not possible.
+  
+  </p>
+</details>
+
+
+
+---
+
+
+4-30. A company database consists of 10,000 sorted names, 40% of whom are known as good customers and who together account for 60% of the accesses to the database. There are two data structure options to consider for representing the database:
+
+Put all the names in a single array and use binary search.
+Put the good customers in one array and the rest of them in a second array.
+Only if we do not find the query name on a binary search of the first array do we do a binary search of the second array. Demonstrate which option gives better expected performance. Does this change if linear search on an unsorted array is used instead of binary search for both options?
+
+
+<details>
+<summary>**ANSWER**</summary>
+  <p>
+
+    Option 1 is preferred since using binary search would require a maximum of log10000 ~ 13 in the worst case as opposed to log4000 + log6000 ~ 11 + 12 for the split scenario.
+
+    For linear search, option 2 would be preferred as most times, searching the 4000 customers would return the desired result and if the search extends to 6000, the worst case scenario is still 10000 just like option 1.
+
+  
+  </p>
+</details>
+
+
+
+---
+
+
