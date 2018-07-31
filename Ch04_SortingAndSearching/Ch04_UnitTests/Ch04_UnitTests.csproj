@@ -7,7 +7,7 @@
     <ProjectGuid>{E360E328-8EF1-4576-95CF-A5937F9AD6C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ch04_UnitTests</RootNamespace>
+    <RootNamespace>Ch04</RootNamespace>
     <AssemblyName>Ch04_UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -49,9 +49,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UT_Algorithms.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ch04_Answers\Ch04_Answers.csproj">
+      <Project>{7b655abe-fe80-4960-8cfa-88dc61cc66ec}</Project>
+      <Name>Ch04_Answers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ch04_Practices\Ch04_Practices.csproj">
+      <Project>{774e3393-432d-4334-8449-744fcb257445}</Project>
+      <Name>Ch04_Practices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

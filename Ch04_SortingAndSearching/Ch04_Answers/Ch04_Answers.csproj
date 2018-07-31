@@ -7,7 +7,7 @@
     <ProjectGuid>{7B655ABE-FE80-4960-8CFA-88DC61CC66EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ch04_Answers</RootNamespace>
+    <RootNamespace>Ch04</RootNamespace>
     <AssemblyName>Ch04_Answers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort.cs" />
+    <Compile Include="AnswersToAlgorithms\AAL_02_QuickSort.cs" />
+    <Compile Include="AnswersToAlgorithms\AAL_02_QuickSort_v2.cs" />
+    <Compile Include="AnswersToAlgorithms\AAL_HelperMethods.cs" />
+    <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort_v2.cs" />
     <Compile Include="AnswersToQuestions\AQ_44_ImplementAStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
