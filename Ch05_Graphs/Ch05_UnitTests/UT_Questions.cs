@@ -20,10 +20,10 @@ namespace Ch05
             D1.AutoCreateGraph_03_TopSort_Directed_for_AQ_02_string(g1);
 
             //Get result in a string no spaces
-            List<D1.Node<string>> resultList = Q02.TopSort(g1);
+            List<Node<string>> resultList = Q02.TopSort(g1);
             StringBuilder sb = new StringBuilder();
 
-            foreach(D1.Node<string> node in resultList)
+            foreach(Node<string> node in resultList)
             {
                 sb.Append(node.Id);
             }
