@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_02_QuickSort.cs" />
-    <Compile Include="AnswersToAlgorithms\AAL_02_QuickSort_v2.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_HelperMethods.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort_v2.cs" />
     <Compile Include="AnswersToQuestions\AQ_44_ImplementAStack.cs" />
