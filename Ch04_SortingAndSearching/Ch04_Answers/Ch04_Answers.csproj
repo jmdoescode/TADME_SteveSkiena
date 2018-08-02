@@ -44,12 +44,11 @@
     <Compile Include="AnswersToAlgorithms\AAL_02_QuickSort.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_HelperMethods.cs" />
     <Compile Include="AnswersToAlgorithms\AAL_01_MergeSort_v2.cs" />
+    <Compile Include="AnswersToDataStructures\ADS_01_MinHeap.cs" />
     <Compile Include="AnswersToQuestions\AQ_44_ImplementAStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AnswersToDataStructures\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="AnswersToQuestions\AQ_01_GrinchPartitioning.md" />
     <None Include="AnswersToQuestions\AQ_02_FindNumbersWithGivenTime.md" />

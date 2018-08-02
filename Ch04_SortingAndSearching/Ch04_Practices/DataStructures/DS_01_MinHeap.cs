@@ -7,13 +7,10 @@ using System.Threading.Tasks;
 namespace Ch04
 {
     /// <summary>
-    /// Create a merge sort algorithm
+    /// Create a minmum Heap
     /// </summary>
-    public static class AL_02_QuickSort
+    public class DS_01_MinHeap
     {
-        public static void QuickSort(int[] array)
-        {
-            
-        }
+
     }
 }

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\AL_01_MergeSort.cs" />
     <Compile Include="Algorithms\AL_02_QuickSort.cs" />
+    <Compile Include="DataStructures\DS_01_MinHeap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
